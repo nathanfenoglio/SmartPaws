@@ -7,7 +7,7 @@ import journalEntryRoutes from "./routes/journalEntryRoutes";
 
 
 // ExpressJS code to define server and routes.
-
+console.log("app.ts");
 const application = express();
 application.use(express.json())
 
