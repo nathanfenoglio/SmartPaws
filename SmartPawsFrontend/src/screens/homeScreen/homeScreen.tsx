@@ -33,6 +33,7 @@ const HomeScreen = () => {
       const ownerId = currentUser ? currentUser.uid : "";
       if (!ownerId) throw new Error("No user ID found");
 
+      console.log(`${BASE_URL}user/get/${ownerId}`);
       const response = await fetch(`${BASE_URL}user/get/${ownerId}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
