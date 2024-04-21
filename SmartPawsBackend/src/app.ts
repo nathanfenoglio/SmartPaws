@@ -20,6 +20,12 @@ application.get("/", (req, res) => {
   res.send("<h1>Welcome to SmartPaws API</h1>");
 });
 
+// Route to print the MongoDB connection string in an <h1> tag for debugging
+application.get("/debug", (req, res) => {
+  const dbConnectionString = process.env.MONGODB_CONNECTION_STRING;
+  res.send(`<h1>DB Connection String: ${dbConnectionString}</h1>`);
+});
+
 petEventEmitter.on('petConcernToggled', (pet) => {
     console.log(`Notification: ${pet.name} has been flagged for concern by ${pet.ownerId}.`);
 });
