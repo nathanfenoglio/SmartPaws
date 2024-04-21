@@ -15,6 +15,11 @@ application.use("/user", userRoutes)
 application.use("/pet", petRoutes)
 application.use("/journalEntry", journalEntryRoutes)
 
+// Route to print something to the web page
+application.get("/", (req, res) => {
+  res.send("<h1>Welcome to SmartPaws API</h1>");
+});
+
 petEventEmitter.on('petConcernToggled', (pet) => {
     console.log(`Notification: ${pet.name} has been flagged for concern by ${pet.ownerId}.`);
 });
