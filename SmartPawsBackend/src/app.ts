@@ -21,6 +21,7 @@ application.get("/", (req, res) => {
 });
 
 // Route to print the MongoDB connection string in an <h1> tag for debugging
+// yup it seems to print the correct mongodb connection string
 application.get("/debug", (req, res) => {
   const dbConnectionString = process.env.MONGODB_CONNECTION_STRING;
   res.send(`<h1>DB Connection String: ${dbConnectionString}</h1>`);
