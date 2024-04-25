@@ -33,7 +33,6 @@ const HomeScreen = () => {
       const ownerId = currentUser ? currentUser.uid : "";
       if (!ownerId) throw new Error("No user ID found");
 
-      console.log(`${BASE_URL}user/get/${ownerId}`);
       const response = await fetch(`${BASE_URL}user/get/${ownerId}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -157,14 +156,14 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   petEntry: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     marginVertical: 8, // Adds space between entries
   },
   petImage: {
-    width: 100, // Adjust width as desired
-    height: 100, // Adjust height as desired
-    borderRadius: 50, // Adjust for rounded corners, 50 if you want it circular
+    width: 170, // Adjust width as desired
+    height: 170, // Adjust height as desired
+    borderRadius: 85, // Adjust for rounded corners, 50 if you want it circular
   },
   petInfo: {
     marginLeft: 10, // Space between image and pet name
@@ -172,6 +171,7 @@ const styles = StyleSheet.create({
   petName: {
     fontSize: 24, // Adjust font size as desired
     fontWeight: 'bold',
+    marginTop: 10,
   },
   button: {
     paddingHorizontal: 20,

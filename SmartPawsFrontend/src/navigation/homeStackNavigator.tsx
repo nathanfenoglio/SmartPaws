@@ -19,7 +19,7 @@ import { useContext } from 'react';
 import { NavigationContext } from "./navigationContext";
 import { Text, TouchableOpacity } from "react-native";
 
-const Stack = createNativeStackNavigator<HomeStackParamList>()
+const Stack = createNativeStackNavigator<HomeStackParamList>();
 
 const HomeStackNavigator = () => {
   const { initialScreen } = useContext(NavigationContext);
@@ -33,17 +33,35 @@ const HomeStackNavigator = () => {
     // and so will dictate the name of the 1st screen that gets loaded on the home stack
     <Stack.Navigator
       initialRouteName={initialScreen as keyof HomeStackParamList}
-      screenOptions={({ navigation }) => ({
-        headerRight: () => (
-          <TouchableOpacity onPress={() => navigation.navigate('Settings')} style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <MaterialIcons name="settings" size={25} color="grey" />
-            <Text style={{ color: "grey", marginLeft: 4 }}>Settings</Text>
-          </TouchableOpacity>
-        ),
-        headerTitleAlign: 'center', // Centers the header title like in the tab navigator
-        headerBackTitleVisible: false, // Hides the back button title for iOS
+      screenOptions={({ navigation, route }) => ({
+        headerRight: () => {
+          // Get the current route name directly from the route object
+          const currentRouteName = route.name;
+          
+          // Conditionally render the settings icon
+          if (currentRouteName !== 'Home') {
+            return null;  // Don't render the settings icon on UserProfile
+          } else {
+            return (
+              <TouchableOpacity onPress={() => navigation.navigate('Settings')} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <MaterialIcons name="settings" size={25} color="grey" />
+                <Text style={{ color: "grey", marginLeft: 4 }}>Settings</Text>
+              </TouchableOpacity>
+            );
+          }
+        },
+        headerTitleAlign: 'center',
+        headerBackTitleVisible: false,
       })}
-    >
+      >{/* home screen */}
+      <Stack.Screen
+        name={"Home"}
+        options={{
+          headerTitle: "",
+          headerBackTitleVisible: false,
+        }}
+        component={HomeScreen}
+      />
       {/* onboarding screens */}
       <Stack.Screen
         name={"Onboard1"}
@@ -67,15 +85,6 @@ const HomeStackNavigator = () => {
         }}
         component={OnBoarding3}
       />
-      {/* home screen */}
-      <Stack.Screen
-        name={"Home"}
-        options={{
-          headerTitle: "",
-          headerBackTitleVisible: false,
-        }}
-        component={HomeScreen}
-      />
       {/* register pet screen */}
       <Stack.Screen
         name={"RegPet"}
@@ -91,8 +100,8 @@ const HomeStackNavigator = () => {
         name={"Settings"}
         options={{
           headerTitle: "",
-          headerShown: false,
-          headerBackTitleVisible: false,
+          headerShown: true,
+          headerBackTitleVisible: true,
         }}
         component={SettingsScreen}
       />
@@ -131,21 +140,21 @@ const HomeStackNavigator = () => {
         name={"UserProfile"}
         options={{
           headerTitle: 'User Profile',
-          headerShown: false
+          headerShown: true,
+          headerBackTitleVisible: true
         }}
         component={UserProfileScreen}
       />
-
       {/* terms of use screen */}
       <Stack.Screen
         name={"TermsOfUse"}
         options={{
           headerTitle: 'Terms of Use',
-          headerShown: false
+          headerShown: true,
+          headerBackTitleVisible: true
         }}
         component={TermsOfUseScreen}
       />
-
     </Stack.Navigator>
   )
 }
