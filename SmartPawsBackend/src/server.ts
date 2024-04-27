@@ -10,7 +10,7 @@ const connectToDatabase = async () => {
     const connection = await mongoose.connect(env.MONGODB_CONNECTION_STRING);
     if (connection) {
       console.log("Mongoose connected!");
-      console.log("blah");
+      console.log("blah blah blah");
     }
     // application imported from app.ts signifies the initial routes for /user and /pet
     application.listen(port, () => {
