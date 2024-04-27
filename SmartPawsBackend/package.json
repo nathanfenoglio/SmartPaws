@@ -32,7 +32,8 @@
     "firebase": "^10.8.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.1",
-    "openai": "^4.28.0"
+    "openai": "^4.28.0",
+    "next-auth": "^4.15.0"
   },
   "engines": {
     "node": "20.x"
