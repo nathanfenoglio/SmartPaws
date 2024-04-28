@@ -5,7 +5,7 @@ import * as SecureStore from "expo-secure-store"
 
 export const BASE_URL = process.env.BASE_URL
 console.log("BASE_URL: " + BASE_URL);
-console.log("a change to config.ts to try to get stuff to update and stuff");
+console.log("a change to config.ts to try to get stuff to update but still it pulls the previous BASE_URL not the one in the .env file currently wtf?");
 
 const TIME_OUT = 3000
 export const SMART_PAWS_TOKEN = "smart_paws_token"
