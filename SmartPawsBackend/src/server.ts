@@ -5,12 +5,10 @@ import * as mongoose from "mongoose";
 const port = env.PORT
 // Connects to MongoDB Database and Starts development server.
 const connectToDatabase = async () => {
-  console.log("hi");
   try {
     const connection = await mongoose.connect(env.MONGODB_CONNECTION_STRING);
     if (connection) {
       console.log("Mongoose connected!");
-      console.log("blah blah blah");
     }
     // application imported from app.ts signifies the initial routes for /user and /pet
     application.listen(port, () => {
