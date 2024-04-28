@@ -5,7 +5,7 @@ import * as mongoose from "mongoose";
 const port = env.PORT
 // Connects to MongoDB Database and Starts development server.
 const connectToDatabase = async () => {
-
+  console.log("hi");
   try {
     const connection = await mongoose.connect(env.MONGODB_CONNECTION_STRING);
     if (connection) {
