@@ -45,7 +45,6 @@ const connectToDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
         const connection = yield mongoose.connect(validateEnv_1.default.MONGODB_CONNECTION_STRING);
         if (connection) {
             console.log("Mongoose connected!");
-            console.log("blah blah blah");
         }
         // application imported from app.ts signifies the initial routes for /user and /pet
         app_1.default.listen(port, () => {

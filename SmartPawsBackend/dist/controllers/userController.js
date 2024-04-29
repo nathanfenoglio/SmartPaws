@@ -14,7 +14,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateUser = exports.getUser = exports.loginUser = exports.createUser = void 0;
-const bcrypt_1 = __importDefault(require("bcrypt"));
+// import bcrypt from "bcrypt"
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const userModel_1 = __importDefault(require("../models/userModel"));
 const getUserToken = (_id) => {
@@ -31,7 +32,7 @@ const createUser = (request, response) => __awaiter(void 0, void 0, void 0, func
         if (existingUser) {
             return response.status(409).send("user already exist");
         }
-        const hashedPassword = yield bcrypt_1.default.hash(password, 12);
+        const hashedPassword = yield bcryptjs_1.default.hash(password, 12);
         yield userModel_1.default.create({
             name: name,
             email: email,
@@ -54,7 +55,7 @@ const loginUser = (request, response) => __awaiter(void 0, void 0, void 0, funct
         if (!existingUser) {
             return response.status(409).send({ message: "User doesn't exist" });
         }
-        const isPasswordIdentical = yield bcrypt_1.default.compare(password, existingUser.password);
+        const isPasswordIdentical = yield bcryptjs_1.default.compare(password, existingUser.password);
         if (isPasswordIdentical) {
             const token = getUserToken(existingUser._id);
             return response.send({

@@ -1,6 +1,7 @@
 // This file has functions that interact with User.
 
-import bcrypt from "bcrypt"
+// import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"
 import { Request, Response } from "express"
 import jwt from "jsonwebtoken"
 import { Types } from "mongoose"
