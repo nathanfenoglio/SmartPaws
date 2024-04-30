@@ -39,7 +39,8 @@ const app_1 = __importDefault(require("./app"));
 const validateEnv_1 = __importDefault(require("./util/validateEnv"));
 const mongoose = __importStar(require("mongoose"));
 // const port = env.PORT
-const port = validateEnv_1.default.PORT || 3000;
+// const port = env.PORT || 3000;
+const port = process.env.PORT || 3000;
 // Connects to MongoDB Database and Starts development server.
 const connectToDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
