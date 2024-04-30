@@ -7,7 +7,7 @@
     "start": "node dist/server.js",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "npx tsc",
     "postinstall": "npm run build"
   },
   "keywords": [],
@@ -22,8 +22,7 @@
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
     "nodemon": "^3.0.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "ts-node": "^10.9.2"
   },
   "engines": {
     "node": "20.x"
@@ -37,6 +36,7 @@
     "firebase": "^10.8.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.1",
-    "openai": "^4.28.0"
+    "openai": "^4.28.0",
+    "typescript": "^5.3.3"
   }
 }
