@@ -44,6 +44,7 @@
 - MongoDB - sign up for account https://www.mongodb.com/
 - Firebase - sign up for account https://firebase.google.com/docs/auth
 - OpenAI - sign up for account https://platform.openai.com/signup
+- Google Maps - get API key https://developers.google.com/maps/documentation/javascript/get-api-key
 - install node.js on your computer if you haven't already https://nodejs.org/en/download
 - clone git repo in whatever directory you want on your computer git clone https://github.com/nathanfenoglio/SmartPaws.git
 - go into both directories and run npm install in each
@@ -62,7 +63,17 @@
   - MESSAGING_SENDER_ID=YOUR_FIREBASE_MESSAGING_SENDER_ID
   - APP_ID=YOUR_FIREBASE_APP_ID
   - MEASUREMENT_ID=YOUR_FIREBASE_MEASUREMENT_ID
-
+  - GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
+  - CHATGPT_GEN_THREAD_ID=YOUR_CHATGPT_GEN_THREAD_ID
+- running app locally
+  - download expo go on your phone (can search for it in app store or google play)
+  - this will let you scan a qr code to be able to debug on your phone
+  - or could also use emulator on your computer using android studio to debug on computer
+  - start backend server cd into SmartPawsBackend, npm start
+  - start frontend in another terminal window cd into SmartPawsFrontend, npx expo start
+  - open expo go on phone
+  - select "Scan QR code" and scan QR code from terminal
+  
 # Download From Google Play or Apple App Store
 ### deployment to come in future...
 
