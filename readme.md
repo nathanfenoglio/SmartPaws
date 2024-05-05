@@ -9,4 +9,22 @@
 - Nathan Fenoglio
 - Ethyn Nguyen
 
-<!-- ![alt_image](https://github.com/nathanfenoglio/Juce-Midi-VST3-Plugin-Multi-Sequence-Manipulator/blob/master/images/screenshot_1.jpg) -->
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/intro.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/signup.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/welcome.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/onboarding1.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/onboarding2.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/add_new_pet.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/add_new_pet_2.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/enter_pet_details.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/add_new_pet_2.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/pet_registered.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/pet_profile.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_select_pet.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/new_thread_pet_details_sent.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_pet_query.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_assistant_response.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_previous_conversation_thread_evidence.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_previous_conversation_thread_evidence_2.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_date_picker.png)
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_add_entry.png)
