@@ -15,14 +15,17 @@
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/signup.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/welcome.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/onboarding1.png)
+### Add New Pet Profile
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/onboarding2.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/add_new_pet.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/add_new_pet_2.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/enter_pet_details.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/add_new_pet_2.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/pet_registered.png)
+### Virtual Vet Chatbot
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/pet_profile.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_select_pet.png)
+### separate conversation thread per registered pet for personalized pet advice
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/new_thread_pet_details_sent.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_pet_query.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_assistant_response.png)
