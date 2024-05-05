@@ -10,7 +10,7 @@
 - Ethyn Nguyen
 
 # Screen Flow Demo
-<h3 style="text-align: center;">Intro / Sign Up / Onboarding Screens</h3>
+### Intro / Sign Up / Onboarding Screens
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/intro.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/signup.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/welcome.png)
