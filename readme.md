@@ -38,3 +38,22 @@
 ### Journal Screen
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_date_picker.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_add_entry.png)
+
+# Setup Instructions
+(If wanting to setup app to run with your own credentials/accounts)
+- MongoDB - sign up for account https://www.mongodb.com/
+- Firebase - sign up for account https://firebase.google.com/docs/auth
+- OpenAI - sign up for account https://platform.openai.com/signup
+- install node.js on your computer if you haven't already https://nodejs.org/en/download
+- clone git repo in whatever directory you want on your computer git clone https://github.com/nathanfenoglio/SmartPaws.git
+- go into both directories and run npm install in each
+  - cd into SmartPawsFrontend, npm install
+  - cd into SmartPawsBackend, npm install
+- add file ".env" to SmartPawsBackend SmartPawsBackend/.env
+  - MONGODB_CONNECTION_STRING=YOUR_MONGODB_CONNECTION_STRING
+  - OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+  - PORT=1337
+
+# Download From Google Play or Apple App Store
+### deployment to come in future...
+
