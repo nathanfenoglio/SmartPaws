@@ -53,7 +53,8 @@
   - MONGODB_CONNECTION_STRING=YOUR_MONGODB_CONNECTION_STRING
   - OPENAI_API_KEY=YOUR_OPENAI_API_KEY
   - PORT=1337
-
+- add file ".env" to SmartPawsFrontend SmartPawsFrontend/src/.env
+  - BASE_URL=`YOUR_IP_ADDRESS`
 # Download From Google Play or Apple App Store
 ### deployment to come in future...
 
