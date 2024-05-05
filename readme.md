@@ -32,7 +32,9 @@
 ### "my pet has not been eating much of anything even though food has been regularly available for the last 2 days and I am concerned"
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_pet_query.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_assistant_response.png)
+### previous conversation info retained per pet profile
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_previous_conversation_thread_evidence.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_previous_conversation_thread_evidence_2.png)
+### Journal Screen
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_date_picker.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_add_entry.png)
