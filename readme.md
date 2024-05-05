@@ -9,6 +9,8 @@
 - Nathan Fenoglio
 - Ethyn Nguyen
 
+# Screen Flow Demo
+### Intro Screen
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/intro.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/signup.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/welcome.png)
