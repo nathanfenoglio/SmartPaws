@@ -38,6 +38,9 @@
 ### Journal Screen
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_date_picker.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/journal_add_entry.png)
+### Find Nearest Vets Screen
+![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/map_screen.png)
+
 
 # Setup Instructions
 (If wanting to setup app to run with your own credentials/accounts)
@@ -73,7 +76,7 @@
   - start frontend in another terminal window cd into SmartPawsFrontend, npx expo start
   - open expo go on phone
   - select "Scan QR code" and scan QR code from terminal
-  
+
 # Download From Google Play or Apple App Store
 ### deployment to come in future...
 
