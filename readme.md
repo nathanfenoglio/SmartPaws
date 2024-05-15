@@ -26,7 +26,7 @@
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/pet_profile.png)
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/ai_screen_select_pet.png)
 ### separate conversation thread per registered pet for personalized pet advice
-### if 1st time inquiring about pet, new conversation thread created and pet details sent to openai assistant
+### if 1st time inquiring about pet, new conversation thread created and pet details sent to OpenAI assistant
 ![alt_image](https://github.com/nathanfenoglio/SmartPaws/blob/main/images/new_thread_pet_details_sent.png)
 ### user query about pet
 ### "my pet has not been eating much of anything even though food has been regularly available for the last 2 days and I am concerned"
